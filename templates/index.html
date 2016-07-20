@@ -5,17 +5,19 @@
 	<script src="../public/scripts/messages.js"></script>
 </head>
 <body>
-<h1>Index</h1>
-{{content}}
-hello {{Name}} 
-<ol>
-{{#Messages}}
-<li>{{Name}}: {{Content}}</li>
-{{/Messages}}
-</ol>
-<form id="sendMessageForm" action="" method="post">
-	<input type="text" />
-	<input type="submit" value="Send" />
-</form>
+<section>
+	<h1>GoChat</h1>
+	{{content}}
+	hello {{Name}} 
+	<ol>
+	{{#Messages}}
+	<li>{{Name}}: {{Content}}</li>
+	{{/Messages}}
+	</ol>
+	<form id="sendMessageForm" action="" method="post">
+		<input type="text" />
+		<input type="submit" value="Send" />
+	</form>
+</section>
 </body>
 </html>
