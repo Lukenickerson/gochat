@@ -1,0 +1,21 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../public/styles/index.css">
+	<script src="../public/scripts/libs/jquery-3.1.0.js"></script>
+	<script src="../public/scripts/messages.js"></script>
+</head>
+<body>
+<h1>Index</h1>
+{{content}}
+hello {{Name}} 
+<ol>
+{{#Messages}}
+<li>{{Name}}: {{Content}}</li>
+{{/Messages}}
+</ol>
+<form id="sendMessageForm" action="" method="post">
+	<input type="text" />
+	<input type="submit" value="Send" />
+</form>
+</body>
+</html>
